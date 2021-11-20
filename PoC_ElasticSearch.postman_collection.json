@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "c8cc4126-6708-4a9a-9bb3-84eb7add9c3b",
+		"name": "PoC_Elasticsearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/filter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"filter_by_firstname\",\r\n    \"fieldName\": \"firstname\",\r\n    \"value\": \"Charlie\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/filter/user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/filter/user?filtername=filter_by_firstname",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"filter",
+						"user"
+					],
+					"query": [
+						{
+							"key": "filtername",
+							"value": "filter_by_firstname"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
