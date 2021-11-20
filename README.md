@@ -5,9 +5,9 @@
 $ docker-compose up -d
 ```
 
-### IP API : `http//localhost:8080/api`
+### IP API : `http://localhost:8080/api`
 
-### IP DB : `http//localhost:9200`
+### IP DB : `http://localhost:9200`
 
 ## Utilisation
 
